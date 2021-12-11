@@ -1,0 +1,125 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* ---------------------------------------------------------------------------- */
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background-color: #e4f9f5;
+	font-size: 20px;
+	color: #40514e;
+	font-weight: 500;
+	font-family: Montserrat;
+}
+
+input,
+button,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: 20px;
+	line-height: inherit;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ---------------------------------------------------------------------------- */
+.container {
+	max-width: 745px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+h1 {
+	padding: 60px 0 20px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 40px;
+	color: #66bfbf;
+	letter-spacing: 0.2px;
+}
+
+.input-item {
+	background-color: #66bfbf;
+	padding: 50px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+::placeholder {
+	text-transform: none;
+}
+
+input[type="text"] {
+	text-align: center;
+	padding: 15px 10px;
+	justify-content: center;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+input[type="button"] {
+	text-align: center;
+	padding: 10px 10px;
+	justify-content: center;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	background-image: linear-gradient(315deg, #30e3cb 0%, #2bc4ad 74%);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+		4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"]:hover {
+	background-color: #89d8d3;
+	background-image: linear-gradient(315deg, #11cdd4 0%, #11999e 74%);
+}
+
+.text::first-letter {
+	text-transform: uppercase;
+}
+
+p {
+	text-align: center;
+	margin: 15px;
+	font-size: 30px;
+}
